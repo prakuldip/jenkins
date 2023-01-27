@@ -4,7 +4,7 @@ pipeline {
         stage('printin headline') {
             steps {
                 echo "Dear all, my name is `whoami` and my hostname is `hostname`" 
-                sh './printdate.sh'
+                sh './practice/printdate.sh'
             }
         }
     }
