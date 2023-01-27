@@ -4,6 +4,7 @@ pipeline {
         stage('printin headline') {
             steps {
                 echo "Dear all" 
+                chmod +x ./practice/printdate.sh
                 sh './practice/printdate.sh'
             }
         }
