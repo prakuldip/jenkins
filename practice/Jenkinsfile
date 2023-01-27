@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('printin headline') {
             steps {
-                echo "Dear all, my name is $(whoami) and my hostname is $(hostname)" 
-                echo "I am currently in $(pwd) location"
+                sh echo "Dear all, my name is $(whoami) and my hostname is $(hostname)" 
+                sh echo "I am currently in $(pwd) location"
             }
         }
     }
